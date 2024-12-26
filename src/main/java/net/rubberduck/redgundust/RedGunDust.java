@@ -13,6 +13,8 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.rubberduck.redgundust.block.ModBlocks;
+import net.rubberduck.redgundust.item.ModCreativeModeTabs;
 import net.rubberduck.redgundust.item.ModItems;
 import org.slf4j.Logger;
 
@@ -34,6 +36,8 @@ public class RedGunDust {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
 
         // Register the item to a creative tab
@@ -52,6 +56,11 @@ public class RedGunDust {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.REDGUNDUST);
             event.accept(ModItems.REDGUNGUN);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.REDGUNDUST_BLOCK);
+            event.accept(ModBlocks.REDGUNDUST_ORE);
+            event.accept(ModBlocks.DEEPSLATE_REDGUNDUST_ORE);
         }
     }
 

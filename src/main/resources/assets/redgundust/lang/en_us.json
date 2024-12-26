@@ -1,4 +1,12 @@
 {
-  "item.redgundust.redgundusts": "RedGunDust",
-  "item.redgundust.redgungun": "RedGun Gun"
+  "item.redgundust.redgundust": "RedGunDust",
+  "item.redgundust.redgungun": "RedGun Gun",
+
+  "block.redgundust.redgundust_block": "Block of RedGunDust",
+  "block.redgundust.redgundust_ore": "RedGunDust Ore",
+  "block.redgundust.deepslate_redgundust_ore": "Deepslate RedGunDust Ore",
+
+
+  "creativetab.redgundust.redgundust_items": "RedGunDust Items",
+  "creativetab.redgundust.redgundust_blocks": "RedGunDust Blocks"
 }

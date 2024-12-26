@@ -11,7 +11,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, RedGunDust.MOD_ID);
 
-    public static final RegistryObject<Item> REDGUNDUST = ITEMS.register("redgundusts",
+    public static final RegistryObject<Item> REDGUNDUST = ITEMS.register("redgundust",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> REDGUNGUN =ITEMS.register("redgungun",
