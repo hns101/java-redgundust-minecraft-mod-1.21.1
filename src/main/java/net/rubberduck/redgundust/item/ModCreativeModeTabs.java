@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.REDGUNDUST_BLOCK.get());
                         output.accept(ModBlocks.REDGUNDUST_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_REDGUNDUST_ORE.get());
+                        output.accept(ModBlocks.RGD.get());
                         output.accept(ModItems.REDGUNGUN.get());
 
                     }).build());

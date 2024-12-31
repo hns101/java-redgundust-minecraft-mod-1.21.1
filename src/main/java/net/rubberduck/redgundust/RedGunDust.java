@@ -61,6 +61,7 @@ public class RedGunDust {
             event.accept(ModBlocks.REDGUNDUST_BLOCK);
             event.accept(ModBlocks.REDGUNDUST_ORE);
             event.accept(ModBlocks.DEEPSLATE_REDGUNDUST_ORE);
+            event.accept(ModBlocks.RGD);
         }
     }
 

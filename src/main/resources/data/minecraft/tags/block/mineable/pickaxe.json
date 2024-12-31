@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values":[
+    "redgundust:redgundust_block",
+    "redgundust:redgundust_ore",
+    "redgundust:deepslate_redgundust_ore"
+  ]
+}

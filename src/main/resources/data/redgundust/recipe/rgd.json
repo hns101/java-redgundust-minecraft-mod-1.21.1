@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "redgundust:redgundust"
+    },
+    "B":{
+      "item": "minecraft:sand"
+      }
+  },
+  "pattern": [
+    "ABA",
+    "BAB",
+    "ABA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "redgundust:rgd"
+  }
+}

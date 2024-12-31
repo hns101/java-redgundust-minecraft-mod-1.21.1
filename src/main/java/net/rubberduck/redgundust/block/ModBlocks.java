@@ -4,12 +4,14 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.TntBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rubberduck.redgundust.RedGunDust;
+import net.rubberduck.redgundust.block.custom.CustomTNTBlock;
 import net.rubberduck.redgundust.item.ModItems;
 
 import java.util.function.Supplier;
@@ -28,8 +30,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> DEEPSLATE_REDGUNDUST_ORE = registerBlock("deepslate_redgundust_ore",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.BASALT)));
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
+    public static final RegistryObject<Block> RGD = registerBlock("rgd",
+            () -> new CustomTNTBlock(BlockBehaviour.Properties.of()
+                    .strength(0.0f)));
 
     private  static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
